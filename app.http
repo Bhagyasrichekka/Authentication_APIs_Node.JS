@@ -1,0 +1,30 @@
+### Register
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "Bhagya",
+  "name": "Bhagyasri Chekka",
+  "password": "bhagya_2000",
+  "gender": "female",
+  "location": "kakinada"
+}
+
+### Login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "Bhagya",
+  "password": "bhagya_2000"
+}
+
+### Change Password
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "Bhagya",
+  "oldPassword": "bhagya_2000",
+  "newPassword": "bhagya@1234"
+}
